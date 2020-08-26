@@ -1,0 +1,22 @@
+#page-signin #page-signin-logo,
+#page-signup #page-signup-logo,
+#page-forgot #page-forgot-logo {
+    background: url('../../assets/images/web-background.svg') no-repeat center var(--color-primary);
+}
+
+#page-signin #page-signin-logo .logo {
+    width: 35rem;
+}
+
+#page-signin #page-signin-logo .logo img {
+    width: 100%;
+}
+
+#page-signin #page-signin-logo .logo h2,
+#page-signup #page-signup-logo .logo h2,
+#page-forgot #page-forgot-logo .logo h2 {
+    width: 24rem;
+    font: 400 2.5rem Poppins;
+    line-height: 3.5rem;
+    
+}

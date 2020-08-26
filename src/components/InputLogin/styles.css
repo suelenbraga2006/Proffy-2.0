@@ -1,0 +1,109 @@
+.input-block {
+    position: relative;
+    background: var(--color-box-footer);
+    border-radius: 0.8rem 0.8rem 0 0;
+    border: 1px solid var(--color-line-in-white);
+
+    display: flex;
+    align-items: center;
+}
+
+.input-block:focus-within::before {
+    height: calc(100% - 2rem);
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    top: 1.2rem;
+    bottom: 1.2rem;
+    left: -1px;
+    width: 2px;
+}
+
+.input-block + .input-block {
+    border-top: 0;
+    border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.input-block label {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font: 400 1.6rem Poppins;
+    color: var(--color-text-complement);
+    line-height: 2.5rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.input-block input[type="email"],
+.input-block input[type="password"],
+.input-block input[type="text"] {
+    border: 0;
+    width: 100%;
+    outline: 0;
+    margin: 2.8rem 0 0.5rem 1.8rem;
+    padding: 0.8rem;
+    background: var(--color-box-footer);
+    font: 400 1.6rem Poppins;
+    color: var(--color-text-base);
+}
+
+.input-block input:focus + label,
+.input-block input:not(:placeholder-shown) + label {
+    top: 17px;
+    font: 400 1.25rem Poppins;
+}
+
+.lembrar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.lembrar .input-block {
+    background: none;
+    padding: 0;
+    border: 0;
+    position: inherit;
+}
+
+.lembrar .input-block input[type="checkbox"] {
+    width: inherit;
+    display: none;
+}
+
+.lembrar .input-block input[type="checkbox"] + label {
+    position: inherit;
+    cursor: pointer;
+} 
+
+.lembrar .input-block input[type="checkbox"] + label:before {
+    border: 1px solid var(--color-line-in-white);
+    content: "\00a0";
+    display: inline-block;
+    height: 24px;
+    margin: 0 1.6rem 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 24px;
+    border-radius: 0.8rem;
+    background-color: var(--color-box-footer);
+}
+
+.lembrar .input-block input[type="checkbox"]:checked + label:before {
+    background: var(--color-secondary);
+    color: var(--color-box-footer);
+    content: url(../../assets/images/icons/checkbox-check.svg);
+    text-align: center;
+    line-height: 24px;
+}
+
+.input-block input[type="checkbox"]:not(:placeholder-shown) + label {
+    font: inherit;
+}
+
+.lembrar a {
+    text-decoration: none;
+    color: var(--color-text-complement);
+}

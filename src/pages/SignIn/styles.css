@@ -1,0 +1,143 @@
+#page-signin {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--color-text-in-primary);
+}
+
+#page-signin #page-signin-logo,
+#page-signin #page-signin-form {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-signin #page-signin-form {
+    position: relative;
+}
+
+#page-signin #page-signin-form .error {
+    position: absolute;
+    top: 0;
+    background: var(--color-error-box);
+    width: 100%;
+    padding: 2rem;
+    font: 700 1.6rem;
+    color: var(--color-button-text);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-signin #page-signin-form .error.error-shown {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+#page-signin #page-signin-form .error.error-hidden {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+#page-signin #page-signin-form .error svg {
+    margin-right: 1rem;
+}
+
+#page-signin #page-signin-form fieldset {
+    width: 36rem;
+    border: 0;
+    margin: 5rem 0;
+    position: relative;
+}
+
+#page-signin #page-signin-form fieldset svg {
+    position: absolute;
+    bottom: 165px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#page-signin #page-signin-form fieldset svg.checked {
+    color: var(--color-primary);
+}
+
+#page-signin #page-signin-form fieldset svg.unchecked {
+    color: var(--color-text-complement);
+}
+
+#page-signin #page-signin-form fieldset legend {
+    font: 700 3.7rem Poppins;
+    color: var(--color-text-title);
+    margin-bottom: 3rem;
+}
+
+#page-signin-form footer {
+    width: 100%;
+}
+
+#page-signin-form footer .footer-container {
+    width: 36rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+    font: 400 1.6rem Poppins;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#page-signin-form footer .footer-container a {
+    color: var(--color-primary);
+    transition: color 0.2s;
+}
+
+#page-signin-form footer .footer-container a:hover {
+    color: var(--color-primary-darker);
+}
+
+#page-signin-form footer .footer-container .cadastrese {
+    color: var(--color-text-base);
+}
+
+#page-signin-form footer .footer-container span {
+    color: var(--color-text-complement);
+    font-size: 1.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-signin-form footer .footer-container svg {
+    margin-left: 5px;
+    color: var(--color-primary);
+    opacity: 0.5;
+}
+
+@media (min-width: 700px) {
+    #page-signin {
+        flex-direction: row;
+    }
+
+    #page-signin #page-signin-form fieldset {
+        margin-top: 0;
+    }
+
+    #page-signin-form footer {
+        position: fixed;
+        bottom: 0;
+    }
+
+    #page-signin #page-signin-form fieldset svg {
+        bottom: 175px;
+    }
+}
+

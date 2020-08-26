@@ -1,0 +1,108 @@
+#page-signup {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--color-text-in-primary);
+}
+
+#page-signup #page-signup-logo,
+#page-signup #page-signup-form {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-signup #page-signup-form {
+    position: relative;
+}
+
+#page-signup #page-signup-form .error {
+    position: absolute;
+    bottom: 0;
+    background: var(--color-error-box);
+    width: 100%;
+    padding: 2rem;
+    font: 700 1.6rem;
+    color: var(--color-button-text);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-signup #page-signup-form .error.error-shown {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+#page-signup #page-signup-form .error.error-hidden {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+#page-signup #page-signup-form .error svg {
+    margin-right: 1rem;
+}
+
+#page-signup #page-signup-form fieldset {
+    width: 36rem;
+    border: 0;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+#page-signup #page-signup-form fieldset .input-block:nth-last-child(4),
+#page-signup #page-signup-form fieldset .input-block:nth-last-child(5) {
+    border-radius: 0;
+}
+
+#page-signup #page-signup-form fieldset svg {
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#page-signup #page-signup-form fieldset svg.checked {
+    color: var(--color-primary);
+}
+
+#page-signup #page-signup-form fieldset svg.unchecked {
+    color: var(--color-text-complement);
+}
+
+#page-signup #page-signup-form fieldset legend {
+    font: 700 3.7rem Poppins;
+    color: var(--color-text-title);
+    margin-bottom: 1.6rem;
+}
+
+#page-signup #page-signup-form fieldset p {
+    font: 400 1.6rem Poppins;
+    line-height: 2.7rem;
+    color: var(--color-text-base);
+    width: 22rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 700px) {
+    #page-signup {
+        flex-direction: row;
+    }
+
+    #page-signup #page-signup-form fieldset {
+        margin-top: 0;
+    }
+
+    #page-signup #page-signup-form fieldset svg {
+        bottom: 125px;
+    }
+}
+

@@ -1,0 +1,24 @@
+.back-header {
+    width: 50%;
+    padding: 3rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-header a {
+    color: var(--color-primary);
+    min-width: 36rem;
+}
+
+.back-header a svg {
+    margin-left: -0.5rem;
+}
+
+@media (min-width: 700px) {
+    .back-header {
+        position: absolute;
+        top: 0;
+    } 
+}

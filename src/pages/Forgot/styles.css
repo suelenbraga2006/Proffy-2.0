@@ -1,0 +1,106 @@
+#page-forgot {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--color-text-in-primary);
+}
+
+#page-forgot #page-forgot-logo,
+#page-forgot #page-forgot-form {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-forgot #page-forgot-form {
+    position: relative;
+}
+
+#page-forgot #page-forgot-form .error {
+    position: absolute;
+    bottom: 0;
+    background: var(--color-error-box);
+    width: 100%;
+    padding: 2rem;
+    font: 700 1.6rem;
+    color: var(--color-button-text);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-forgot #page-forgot-form .error.error-shown {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+#page-forgot #page-forgot-form .error.error-hidden {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+#page-forgot #page-forgot-form .error svg {
+    margin-right: 1rem;
+}
+
+#page-forgot #page-forgot-form fieldset {
+    width: 36rem;
+    border: 0;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+#page-forgot #page-forgot-form fieldset .input-block {
+    border-radius: 0.8rem;
+}
+
+#page-forgot #page-forgot-form fieldset svg {
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#page-forgot #page-forgot-form fieldset svg.checked {
+    color: var(--color-primary);
+}
+
+#page-forgot #page-forgot-form fieldset svg.unchecked {
+    color: var(--color-text-complement);
+}
+
+#page-forgot #page-forgot-form fieldset legend {
+    font: 700 3.7rem Poppins;
+    color: var(--color-text-title);
+    margin-bottom: 1.6rem;
+}
+
+#page-forgot #page-forgot-form fieldset p {
+    font: 400 1.6rem Poppins;
+    line-height: 2.7rem;
+    color: var(--color-text-base);
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 700px) {
+    #page-forgot {
+        flex-direction: row;
+    }
+
+    #page-forgot #page-forgot-form fieldset {
+        margin-top: 0;
+    }
+
+    #page-forgot #page-forgot-form fieldset svg {
+        bottom: 125px;
+    }
+}
+

@@ -1,0 +1,28 @@
+button {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 0.8rem;
+    padding: 1.8rem;
+    line-height: 2.7rem;
+    font: 500 1.6rem Archivo;
+    margin-top: 4rem;
+    cursor: pointer;
+
+    background-color: var(--color-secondary);
+    color: var(--color-title-in-primary);
+
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+button:disabled,
+button[disabled] {
+    background-color: var(--color-disabled-button);
+    color: var(--color-text-complement);
+    cursor: default;
+}

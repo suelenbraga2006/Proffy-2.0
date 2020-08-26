@@ -1,0 +1,37 @@
+#sign-success {
+    width: 100vw;
+    height: 100vh;
+    background: url(../../assets/images/success-background.svg) no-repeat center var(--color-primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-success svg {
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+}
+
+#sign-success h1 {
+    font: 700 5.4rem Archivo;
+    color: var(--color-title-in-primary);
+}
+
+#sign-success p {
+    font: 400 1.6rem Poppins;
+    color: var(--color-text-in-primary);
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+#sign-success a {
+    background: var(--color-secondary);
+    font: 500 1.6rem Archivo;
+    border-radius: 0.8rem;
+    padding: 1.6rem 3rem;
+    margin-top: 10rem;
+    text-decoration: none;
+    color: var(--color-title-in-primary);
+}
