@@ -6,6 +6,7 @@ Até o momento, essa aplicação conta com as telas de:
 1. Login
 2. Cadastro
 3. Esqueci minha senha
+4. Dashboard com dados da API
 
 ## Para começar
 
